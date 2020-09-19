@@ -160,8 +160,11 @@ class _TasksListState extends State<TasksList> {
                                                               child: FlatButton(
                                                                   onPressed:
                                                                       () {
+                                                                    widget.tasks
+                                                                        .removeAt(
+                                                                            index);
                                                                     widget.editTask(
-                                                                      
+                                                                        index,
                                                                         widget
                                                                             .tasks[
                                                                                 index]

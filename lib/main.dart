@@ -50,11 +50,12 @@ class _HomeState extends State<Home> {
     });
   }
 
-  void editTask(var id, String editTitle, DateTime editDate) {
+  void editTask(int ind, var idd, String editTitle, DateTime editDate) {
     setState(() {
-      final editTask = Tasks(id: id, title: editTitle, date: editDate);
-
-      tasks.insert(int.parse(id), editTask);
+      final editTask = Tasks(id: idd, title: editTitle, date: editDate);
+      print(idd);
+      
+      tasks.insert(ind, editTask);
     });
   }
 

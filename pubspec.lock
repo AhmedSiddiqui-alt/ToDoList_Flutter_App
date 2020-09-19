@@ -8,13 +8,6 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "2.4.2"
-  better_uuid:
-    dependency: "direct dev"
-    description:
-      name: better_uuid
-      url: "https://pub.dartlang.org"
-    source: hosted
-    version: "0.1.2"
   boolean_selector:
     dependency: transitive
     description:
