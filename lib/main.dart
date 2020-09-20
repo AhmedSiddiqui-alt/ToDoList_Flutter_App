@@ -55,7 +55,7 @@ class _HomeState extends State<Home> {
       final editTask = Tasks(id: idd, title: editTitle, date: editDate);
       print(idd);
       
-      tasks.insert(ind, editTask);
+      tasks.add(editTask);
     });
   }
 

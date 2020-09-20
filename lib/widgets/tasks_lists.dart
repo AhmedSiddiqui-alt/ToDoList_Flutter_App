@@ -160,9 +160,6 @@ class _TasksListState extends State<TasksList> {
                                                               child: FlatButton(
                                                                   onPressed:
                                                                       () {
-                                                                    widget.tasks
-                                                                        .removeAt(
-                                                                            index);
                                                                     widget.editTask(
                                                                         index,
                                                                         widget
@@ -173,6 +170,11 @@ class _TasksListState extends State<TasksList> {
                                                                         widget
                                                                             .tasks[index]
                                                                             .date);
+                                                                    widget.delTask(widget
+                                                                        .tasks[
+                                                                            index]
+                                                                        .id);
+
                                                                     Navigator.of(
                                                                             context)
                                                                         .pop();

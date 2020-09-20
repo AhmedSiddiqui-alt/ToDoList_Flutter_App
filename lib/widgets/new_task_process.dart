@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:uuid/uuid.dart';
 import 'package:intl/intl.dart';
 // import 'package:better_uuid/uuid.dart';
-// import 'dart:math';
 
 class NewTask extends StatefulWidget {
   final Function addNewTask;
@@ -15,16 +14,7 @@ class NewTask extends StatefulWidget {
 class _NewTaskState extends State<NewTask> {
   final titleController = TextEditingController();
   DateTime selectedDate;
- var uuid = Uuid();
-//  int  get GetRandomId  
-//  {
-//  var randomizer = new Random(); // can get a seed as a parameter
-
-//   // Integer between 0 and 100 (0 can be 100 not)
-//   var num = randomizer.nextInt(100);
-//   return num;
-//  }
-  
+  var uuid = Uuid();
   void datePicker(BuildContext ctx) {
     showDatePicker(
             context: ctx,
